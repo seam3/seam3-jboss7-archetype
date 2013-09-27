@@ -34,9 +34,10 @@ Crie um projeto
     mvn archetype:generate \
         -DarchetypeGroupId=br.jus.trese \
         -DarchetypeArtifactId=seam3-jboss7-archetype \
-        -DarchetypeVersion=0.1-SNAPSHOT \
+        -DarchetypeVersion=0.1-SNAPSHOT
 
 Para facilitar, copiar e colar:     
+
     mvn archetype:generate -DarchetypeGroupId=br.jus.trese -DarchetypeArtifactId=seam3-jboss7-archetype -DarchetypeVersion=0.1-SNAPSHOT
 
 Ao ser perguntado sobre o artifactID, responda com o nome da aplicação.
