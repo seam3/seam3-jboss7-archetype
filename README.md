@@ -11,6 +11,7 @@ Seam Persistence
 Seam Transaction
 Seam Security
 Hibernate 4
+PrettyFaces
 Primefaces 3
 Richfaces 4
 RestEasy Webservices
@@ -18,7 +19,7 @@ RestEasy Webservices
 Instalação
 ============
 
-Execute mvn install para instalar o archetype no repositório maven local
+Execute "mvn compile install" para instalar o archetype no repositório maven local
 
 Crie um projeto
 
@@ -30,7 +31,7 @@ Importe o projeto no Eclipse
 Criando um novo projeto no Eclipse
 ==================================
 
-Execute mvn install para instalar o archetype no repositório maven local
+Execute mvn compile install para instalar o archetype no repositório maven local
 
 Vá em Preferences > Maven > Archetypes e Add Local Catalog
 Selecione o catálogo do arquivo (archetype-catalog.xml)
