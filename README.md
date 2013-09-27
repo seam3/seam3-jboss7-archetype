@@ -40,7 +40,7 @@ Vai em File > Import > General > Existing Projects into Workspace
 Criando um novo projeto no Eclipse
 ==================================
 
-Execute mvn install para instalar o archetype no repositório maven local
+Execute `mvn compile install` para instalar o archetype no repositório maven local
 
 Vá em Preferences > Maven > Archetypes e Add Local Catalog
 Selecione o catálogo do arquivo (archetype-catalog.xml)
