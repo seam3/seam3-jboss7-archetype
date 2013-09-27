@@ -22,10 +22,7 @@ Execute mvn install para instalar o archetype no repositório maven local
 
 Crie um projeto
 
-mvn archetype:generate \ 
-    -DarchetypeGroupId=br.jus.trese \
-    -DarchetypeArtifactId=seam3-jboss7-archetype \
-    -DarchetypeVersion=0.1-SNAPSHOT
+mvn archetype:generate -DarchetypeGroupId=br.jus.trese -DarchetypeArtifactId=seam3-jboss7-archetype -DarchetypeVersion=0.1-SNAPSHOT
 
 Importe o projeto no Eclipse
 
