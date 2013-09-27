@@ -18,7 +18,10 @@ Características do projeto:
 * Hibernate Validator 4.2.0
 * Primefaces 3.5
 * Richfaces 4.3.3
+* PrettyFaces 3.3.3
 * RestEasy Webservices 2.3.2
+
+Obs.: É necessário JDK 1.6, Maven 3 e o JBoss 7.1.1.Final para executar
 
 Instalação
 ----------
@@ -33,8 +36,8 @@ Crie um projeto
         -DarchetypeArtifactId=seam3-jboss7-archetype \
         -DarchetypeVersion=0.1-SNAPSHOT \
 
-Copiar e colar:     
-mvn archetype:generate -DarchetypeGroupId=br.jus.trese -DarchetypeArtifactId=seam3-jboss7-archetype -DarchetypeVersion=0.1-SNAPSHOT
+Para facilitar, copiar e colar:     
+mvn archetype:generate -DarchetypeGroupId=br.jus.trese -DarchetypeArtifactId=seam3-jboss7-archetype -DarchetypeVersion=0.1-SNAPSHOT \
 
 Ao ser perguntado sobre o artifactID, responda com o nome da aplicação.
 
