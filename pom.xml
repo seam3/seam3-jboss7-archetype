@@ -9,19 +9,6 @@
 
   <name>seam3-jboss7-archetype</name>
 
- <properties>
-    <internal.repo.path>file:\\C:\mvn-repo</internal.repo.path>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-
-  <distributionManagement>
-     <repository>
-        <id>internal.repo</id>
-        <name>Internal Repository</name>
-        <url>${internal.repo.path}</url>
-     </repository>
-  </distributionManagement>
-
   <build>
     <extensions>
       <extension>
