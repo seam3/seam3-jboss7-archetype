@@ -26,7 +26,9 @@ Obs.: É necessário JDK 1.6, Maven 3 e o JBoss 7.1.1.Final para executar.
 Instalação
 ----------
 
-Execute `mvn compile install` para instalar o archetype no repositório maven local
+Realize do download do archetype, clicando em `Download` e descompacte o arquivo no diretório de sua preferência.
+
+Dentro da pasta criada, execute `mvn compile install` para instalar o archetype no repositório maven local
 
 Crie um projeto
 ---------------
