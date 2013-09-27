@@ -23,8 +23,6 @@ Características do projeto:
 
 Obs.: É necessário JDK 1.6, Maven 3 e o JBoss 7.1.1.Final para executar.
 
-Como instalar o MAVEN:  http://maven3tutorial.blogspot.com.br/2011/02/instalando-o-maven-no-seu-computador.html
-
 Instalação
 ----------
 
@@ -65,18 +63,20 @@ Crie um novo Maven project e selecione o archetype (lembre de selecionar "Includ
 Considerações
 =============
 
-O projeto recem criado contém a estrutura padrão para desenvolvimento de sistemas, servindo como um guia para iniciar a implementação propriamente dita.
+O projeto recém criado contém a estrutura padrão para desenvolvimento de sistemas nas tecnologias acima descritas, servindo como um guia para iniciar a implementação propriamente dita.
 
-IMPORTANTE: Trocar onde houver NOME_APLICACAO pelo nome do projeto do software
+IMPORTANTE: Quando o projeto estiver no Eclipse, trocar onde houver NOME_APLICACAO pelo nome do projeto do software
 
 Referências Externas
 ====================
+
+Como instalar o MAVEN:  
+* http://maven3tutorial.blogspot.com.br/2011/02/instalando-o-maven-no-seu-computador.html
 
 Referencia de criar projetos Maven
 
 * http://www.mkyong.com/maven/how-to-create-a-web-application-project-with-maven/
 * http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
-
 
 Referencia de criar Archetypes
 
