@@ -73,13 +73,18 @@ Referências Externas
 ====================
 
 Referencia de criar projetos Maven
+
 http://www.mkyong.com/maven/how-to-create-a-web-application-project-with-maven/
+
 http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 
 
 Referencia de criar Archetypes
+
 http://www.luckyryan.com/2013/02/15/create-maven-archetype-from-existing-project/
+
 http://maven.apache.org/guides/mini/guide-creating-archetypes.html
 
 Criar repositórios no Github
+
 http://blog.rueedlinger.ch/2012/09/use-github-as-maven-remote-repository/
