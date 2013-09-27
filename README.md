@@ -8,14 +8,17 @@ Archetype para aplicativos Seam3 no JBoss 7, conforme arquitetura definida segun
 Características do projeto:
 ---------------------------
 * Weld CDI + JSF 2.0
-* Seam Solder
-* Seam Persistence
-* Seam Transaction
-* Seam Security
-* Hibernate 4
-* Primefaces 3
-* Richfaces 4
-* RestEasy Webservices
+* Seam 3.1.0 Solder 
+* Seam 3.1.0 Persistence
+* Seam 3.1.0 Transaction
+* Seam 3.1.0 Security
+* Seam 3.1.0 International
+* Seam 3.1.0 Remoting
+* Hibernate Core 4.1.4
+* Hibernate Validator 4.2.0
+* Primefaces 3.5
+* Richfaces 4.3.3
+* RestEasy Webservices 2.3.2
 
 Instalação
 ----------
@@ -30,17 +33,24 @@ Crie um projeto
         -DarchetypeArtifactId=seam3-jboss7-archetype \
         -DarchetypeVersion=0.1-SNAPSHOT \
 
+Copiar e colar:     
+mvn archetype:generate -DarchetypeGroupId=br.jus.trese -DarchetypeArtifactId=seam3-jboss7-archetype -DarchetypeVersion=0.1-SNAPSHOT
+
+Ao ser perguntado sobre o artifactID, responda com o nome da aplicação.
+
+Na última pergunta, aperte ENTER
+
 
 Importe o projeto no Eclipse
 ----------------------------
 
-Vai em File > Import > General > Existing Projects into Workspace
+Vá em File > Import > General > Existing Projects into Workspace
 
 
 Criando um novo projeto no Eclipse
 ==================================
 
-Execute `mvn compile install` para instalar o archetype no repositório maven local
+Execute `mvn compile install` para instalar o archetype no seu repositório maven local
 
 Vá em Preferences > Maven > Archetypes e Add Local Catalog
 Selecione o catálogo do arquivo (archetype-catalog.xml)
