@@ -7,28 +7,31 @@ import java.io.Serializable;
 
 import javax.inject.Inject;
 import javax.inject.Named;
-
-import org.hibernate.Session;
+import javax.persistence.EntityManager;
 
 import ${package}.NOME_APLICACAO.infra.persistencia.EsquemaCAD;
-import ${package}.NOME_APLICACAO.infra.persistencia.fabrica.FabricaRepositoriosHibernate;
-import ${package}.base.infra.persistencia.fabrica.TipoFabricaHibernate;
+import ${package}.NOME_APLICACAO.infra.persistencia.fabrica.FabricaRepositoriosJPA;
 
 @Named
 public class RepositorioUtil implements Serializable {
 
 	private static final long serialVersionUID = -3688012233645703429L;
-	@Inject @EsquemaCAD Session session;
+	@Inject @EsquemaCAD EntityManager entityManager;
 	
-	public FabricaRepositoriosHibernate construirFabricaRepositorios(){
-		return new FabricaRepositoriosHibernate(TipoFabricaHibernate.PADRAO, session);
+	//@Inject @EsquemaCAD Session session;
+	//@In Session session; // Caso fosse usado Seam2
+	
+	public FabricaRepositoriosJPA construirFabricaRepositorios(){
+		return new FabricaRepositoriosJPA(entityManager);
+		//return new FabricaRepositoriosHibernate(TipoFabricaHibernate.PADRAO, session);
+		//return new FabricaRepositoriosHibernate(TipoFabricaHibernate.SEAM2, session);
 	}
 	
 	/**
 	 * Recupera a session injetada
 	 * @return
 	 */
-	public Session getSession(){
-		return session;
+	public EntityManager getEntityManager(){
+		return entityManager;
 	}	
 }

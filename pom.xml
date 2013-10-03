@@ -7,7 +7,7 @@
   <version>0.1-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
-  <name>testeSeam3-archetype</name>
+  <name>seam3-jboss7-archetype</name>
 
   <build>
     <extensions>

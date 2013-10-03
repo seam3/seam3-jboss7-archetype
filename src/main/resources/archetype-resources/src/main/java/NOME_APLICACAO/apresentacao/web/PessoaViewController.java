@@ -42,7 +42,7 @@ public class PessoaViewController implements Serializable {
 	@Inject
 	HttpServletResponse response;
 	
-	@Inject NOME_APLICACAOFacade ${artifactId}Facade;
+	@Inject NOME_APLICACAOFacade testeSeam3Facade;
 
 	@Inject Logger logger;
 	
@@ -50,17 +50,18 @@ public class PessoaViewController implements Serializable {
 	private String nome;
 
 	public List<Pessoa> listar() {
-		return ${artifactId}Facade.listar();
+		return testeSeam3Facade.listar();
 	}
 	
-	public String inserePessoa() {
-		boolean retorno = ${artifactId}Facade.adicionarPessoa(nome);
-		if (retorno){
+	public String inserePessoa() throws Exception {
+		try{
+			testeSeam3Facade.adicionarPessoa(nome);
 			logger.info("Pessoa inserida corretamente!");
 			return "sucesso";
-		}else{
+		}catch (Exception e){
 			logger.info("Falha ocorrida!");
-			return "falha";
+			throw e;
+			//return "falha";
 		}
 	}
 

@@ -10,11 +10,9 @@ import ${package}.TIPO_DOMINIO.dominio.repositorio.RepositorioPessoa;
 import ${package}.base.infra.persistencia.fabrica.FabricaGenericaRepositoriosHibernate;
 import ${package}.base.infra.persistencia.fabrica.TipoFabricaHibernate;
 
-public class FabricaRepositoriosHibernate 
-					extends FabricaGenericaRepositoriosHibernate{
+public class FabricaRepositoriosHibernate extends FabricaGenericaRepositoriosHibernate{
 
-	public FabricaRepositoriosHibernate(TipoFabricaHibernate tipo, 
-										Session session) {
+	public FabricaRepositoriosHibernate(TipoFabricaHibernate tipo, Session session) {
 		super(tipo, session);
 	}
 

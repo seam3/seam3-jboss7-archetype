@@ -34,7 +34,7 @@ public class PessoaAS implements Serializable {
 
 	
 	@Transactional
-	public boolean criaConta(String nome) {
+	public void criaConta(String nome) throws Exception {
 		try {
 			RepositorioPessoa repoPessoa = repositorioUtil
 												.construirFabricaRepositorios()
@@ -45,10 +45,8 @@ public class PessoaAS implements Serializable {
 
 			repoPessoa.adicionar(a);
 			
-			return true;
 		} catch (Exception e) {
-			e.printStackTrace();
-			return false;
+			throw new Exception (e);
 		}
 	}
 	

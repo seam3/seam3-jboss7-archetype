@@ -20,14 +20,14 @@ import ${package}.TIPO_DOMINIO.dominio.modelo.Pessoa;
 public class ConsultaPessoaWS {
 
 
-	@Inject NOME_APLICACAOFacade ${artifactId}Facade;
+	@Inject NOME_APLICACAOFacade testeSeam3Facade;
 	
 	@GET
 	@Path("/pessoas")
 	@Produces("application/json")
     public Response pojo() {
 		List<PessoasInfo> p = new ArrayList<PessoasInfo>();
-		List<Pessoa> pessoas = ${artifactId}Facade.listar();
+		List<Pessoa> pessoas = testeSeam3Facade.listar();
 		
 		
 		for (Pessoa pessoa : pessoas) {
