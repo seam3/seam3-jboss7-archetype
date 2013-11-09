@@ -5,7 +5,7 @@
 
 <hibernate-configuration>
     <session-factory name="primary">
-       <property name="hibernate.connection.datasource">java:jboss/datasources/__artifactId___DS</property>
+       <property name="hibernate.connection.datasource">java:jboss/datasources/__artifactId__DS</property>
        <property name="hibernate.hbm2ddl.auto">none</property>
        <property name="hibernate.show_sql">true</property>
        <property name="hibernate.format_sql">false</property>

@@ -346,6 +346,9 @@
 					<includes>
 						<include>**/*</include>
 					</includes>
+					<excludes>
+						<exclude>src/main/webapp/resources/**/*</exclude>
+					</excludes>
 					<replacements>
 						<replacement>
 							<token>__artifactId__</token>
