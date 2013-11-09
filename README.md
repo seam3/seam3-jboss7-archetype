@@ -63,8 +63,6 @@ Vá em File > Import > General > Existing Projects into Workspace
 Criando um novo projeto no Eclipse
 ==================================
 
-Execute `mvn compile install` para instalar o archetype no seu repositório maven local
-
 Vá em Preferences > Maven > Archetypes e Add Local Catalog
 Selecione o catálogo do arquivo (archetype-catalog.xml)
 Crie um novo Maven project e selecione o archetype (lembre de selecionar "Include snapshot archetypes").
