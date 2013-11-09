@@ -60,19 +60,12 @@ Importe o projeto no Eclipse
 Vá em File > Import > General > Existing Projects into Workspace
 
 
-Criando um novo projeto no Eclipse
-==================================
-
-Vá em Preferences > Maven > Archetypes e Add Local Catalog
-Selecione o catálogo do arquivo (archetype-catalog.xml)
-Crie um novo Maven project e selecione o archetype (lembre de selecionar "Include snapshot archetypes").
-
 Considerações
 =============
 
 O projeto recém criado contém a estrutura padrão para desenvolvimento de sistemas nas tecnologias acima descritas, servindo como um guia para iniciar a implementação propriamente dita.
 
-IMPORTANTE: Quando o projeto estiver no Eclipse, trocar onde houver NOME_APLICACAO pelo nome do projeto do software
+IMPORTANTE: Quando o projeto estiver no Eclipse, renomear a classe <nomeProjeto>Facade para o formato apropriado.
 
 Referências Externas
 ====================
