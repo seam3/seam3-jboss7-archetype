@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.NOME_APLICACAO.webservice.rest.recurso;
+package ${package}.__artifactId__.webservice.rest.recurso;
 
 import java.util.Date;
 

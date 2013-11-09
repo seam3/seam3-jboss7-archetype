@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.NOME_APLICACAO.apresentacao.web;
+package ${package}.__artifactId__.apresentacao.web;
 
 import java.io.Serializable;
 import java.util.List;
@@ -16,8 +16,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.jboss.solder.logging.Logger;
 
-import ${package}.NOME_APLICACAO.aplicacao.facade.NOME_APLICACAOFacade;
 import ${package}.TIPO_DOMINIO.dominio.modelo.Pessoa;
+import ${package}.__artifactId__.aplicacao.facade.__artifactId__Facade;
 
 
 
@@ -42,7 +42,7 @@ public class PessoaViewController implements Serializable {
 	@Inject
 	HttpServletResponse response;
 	
-	@Inject NOME_APLICACAOFacade testeSeam3Facade;
+	@Inject __artifactId__Facade __artifactId__Facade;
 
 	@Inject Logger logger;
 	
@@ -50,12 +50,12 @@ public class PessoaViewController implements Serializable {
 	private String nome;
 
 	public List<Pessoa> listar() {
-		return testeSeam3Facade.listar();
+		return __artifactId__Facade.listar();
 	}
 	
 	public String inserePessoa() throws Exception {
 		try{
-			testeSeam3Facade.adicionarPessoa(nome);
+			__artifactId__Facade.adicionarPessoa(nome);
 			logger.info("Pessoa inserida corretamente!");
 			return "sucesso";
 		}catch (Exception e){

@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.NOME_APLICACAO.util;
+package ${package}.__artifactId__.util;
 
 import java.io.Serializable;
 
@@ -9,8 +9,8 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import javax.persistence.EntityManager;
 
-import ${package}.NOME_APLICACAO.infra.persistencia.EsquemaCAD;
-import ${package}.NOME_APLICACAO.infra.persistencia.fabrica.FabricaRepositoriosJPA;
+import ${package}.__artifactId__.infra.persistencia.EsquemaCAD;
+import ${package}.__artifactId__.infra.persistencia.fabrica.FabricaRepositoriosJPA;
 
 @Named
 public class RepositorioUtil implements Serializable {

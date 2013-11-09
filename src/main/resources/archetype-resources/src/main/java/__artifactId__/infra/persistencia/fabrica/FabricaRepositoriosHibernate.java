@@ -1,12 +1,12 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.NOME_APLICACAO.infra.persistencia.fabrica;
+package ${package}.__artifactId__.infra.persistencia.fabrica;
 
 import org.hibernate.Session;
 
-import ${package}.NOME_APLICACAO.infra.persistencia.RepositorioPessoaHibernate;
 import ${package}.TIPO_DOMINIO.dominio.repositorio.RepositorioPessoa;
+import ${package}.__artifactId__.infra.persistencia.RepositorioPessoaHibernate;
 import ${package}.base.infra.persistencia.fabrica.FabricaGenericaRepositoriosHibernate;
 import ${package}.base.infra.persistencia.fabrica.TipoFabricaHibernate;
 

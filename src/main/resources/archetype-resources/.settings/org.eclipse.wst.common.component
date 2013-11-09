@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-  <wb-module deploy-name="NOME_APLICACAO">
-    <property name="context-root" value="NOME_APLICACAO"/>
+  <wb-module deploy-name="__artifactId__">
+    <property name="context-root" value="__artifactId__"/>
     <wb-resource deploy-path="/" source-path="src/main/webapp"/>
     <property name="java-output-path" value="/target/classes"/>
     <wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>

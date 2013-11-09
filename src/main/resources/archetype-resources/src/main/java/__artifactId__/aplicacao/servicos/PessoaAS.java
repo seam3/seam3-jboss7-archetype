@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.NOME_APLICACAO.aplicacao.servicos;
+package ${package}.__artifactId__.aplicacao.servicos;
 
 import java.io.Serializable;
 import java.util.List;
@@ -11,9 +11,9 @@ import javax.inject.Named;
 
 import org.jboss.seam.transaction.Transactional;
 
-import ${package}.NOME_APLICACAO.util.RepositorioUtil;
 import ${package}.TIPO_DOMINIO.dominio.modelo.Pessoa;
 import ${package}.TIPO_DOMINIO.dominio.repositorio.RepositorioPessoa;
+import ${package}.__artifactId__.util.RepositorioUtil;
 
 
 @Named

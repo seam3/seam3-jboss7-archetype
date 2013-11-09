@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.NOME_APLICACAO;
+package ${package}.__artifactId__;
 
 import org.junit.Assert;
 import org.junit.Test;

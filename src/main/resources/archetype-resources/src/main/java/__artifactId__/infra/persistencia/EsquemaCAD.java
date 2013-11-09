@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.NOME_APLICACAO.infra.persistencia;
+package ${package}.__artifactId__.infra.persistencia;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    
-    <!-- POM padrao para desenvolvimento de aplicativos usando
-         as tecnologias JEE6: CDI + Seam Solder + Seam Persistence 
-         + Seam Faces + RestEasy -->
+
+	<!-- POM padrao para desenvolvimento de aplicativos usando as tecnologias 
+		JEE6: CDI + Seam Solder + Seam Persistence + Seam Faces + RestEasy -->
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>${groupId}</groupId>
 	<artifactId>${artifactId}</artifactId>
 	<packaging>war</packaging>
 	<version>${version}</version>
-	<name>Nome da Aplicacao WEB</name>
+	<name>__artifactId__</name>
 
 	<properties>
 		<internal.repo.path>file:\\C:\mvn-repo</internal.repo.path>
@@ -17,13 +16,13 @@
 	</properties>
 
 
-  	<distributionManagement>
-     		<repository>
-        		<id>internal.repo</id>
-        		<name>Internal Repository</name>
-        		<url>${internal.repo.path}</url>
-     		</repository>
-  	</distributionManagement>
+	<distributionManagement>
+		<repository>
+			<id>internal.repo</id>
+			<name>Internal Repository</name>
+			<url>${internal.repo.path}</url>
+		</repository>
+	</distributionManagement>
 
 	<repositories>
 		<repository>
@@ -327,8 +326,34 @@
 		</dependency>
 	</dependencies>
 
-    <!-- Aqui alterar o nome para o nome da aplicacao -->
+	<!-- Aqui alterar o nome para o nome da aplicacao -->
 	<build>
-		<finalName>NOME_APLICACAO</finalName>
+		<finalName>__artifactId__</finalName>
+		<plugins>
+			<plugin>
+				<groupId>com.google.code.maven-replacer-plugin</groupId>
+				<artifactId>replacer</artifactId>
+				<version>1.5.2</version>
+				<executions>
+					<execution>
+						<phase>none</phase>
+						<goals>
+							<goal>replace</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<includes>
+						<include>**/*</include>
+					</includes>
+					<replacements>
+						<replacement>
+							<token>__artifactId__</token>
+							<value>${artifactId}</value>
+						</replacement>
+					</replacements>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 </project>

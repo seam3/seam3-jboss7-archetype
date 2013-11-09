@@ -1,0 +1,22 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources>
+	<datasource 
+		jndi-name="java:jboss/datasources/__artifactId__DS"
+		enabled="true" use-java-context="true" 
+		pool-name="__artifactId__DS">
+		<connection-url>jdbc:oracle:thin:@localhost:1521:xe</connection-url>
+		<driver>ojdbc6.jar</driver>
+		<security>
+			<user-name>sancoes</user-name>
+			<password>sancoes01</password>
+		</security>
+		<pool>
+			<min-pool-size>5</min-pool-size>
+			<max-pool-size>20</max-pool-size>
+			<prefill>true</prefill>
+		</pool>
+	</datasource>
+</datasources>

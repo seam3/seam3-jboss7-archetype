@@ -1,12 +1,12 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.NOME_APLICACAO.infra.persistencia.fabrica;
+package ${package}.__artifactId__.infra.persistencia.fabrica;
 
 import javax.persistence.EntityManager;
 
-import ${package}.NOME_APLICACAO.infra.persistencia.RepositorioPessoaJPA;
 import ${package}.TIPO_DOMINIO.dominio.repositorio.RepositorioPessoa;
+import ${package}.__artifactId__.infra.persistencia.RepositorioPessoaJPA;
 import ${package}.base.infra.persistencia.fabrica.FabricaGenericaRepositoriosJPA;
 
 public class FabricaRepositoriosJPA extends FabricaGenericaRepositoriosJPA{

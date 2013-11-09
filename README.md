@@ -48,6 +48,11 @@ Ao ser perguntado sobre o artifactID, responda com o nome da aplicação.
 
 Na última pergunta, aperte ENTER
 
+Então entre na pasta do projeto recém criado e digite:
+
+    mvn replacer:replace
+
+
 
 Importe o projeto no Eclipse
 ----------------------------

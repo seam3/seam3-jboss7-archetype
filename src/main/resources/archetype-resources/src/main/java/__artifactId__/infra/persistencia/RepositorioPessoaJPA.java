@@ -1,20 +1,20 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.NOME_APLICACAO.infra.persistencia;
+package ${package}.__artifactId__.infra.persistencia;
 
 import java.util.List;
 
-import org.hibernate.Session;
+import javax.persistence.EntityManager;
 
 import ${package}.TIPO_DOMINIO.dominio.modelo.Pessoa;
 import ${package}.TIPO_DOMINIO.dominio.repositorio.RepositorioPessoa;
-import ${package}.base.infra.persistencia.RepositorioGenericoHibernate;
+import ${package}.base.infra.persistencia.RepositorioGenericoJPA;
 
-public class RepositorioPessoaHibernate extends RepositorioGenericoHibernate<Pessoa, Long> implements RepositorioPessoa {
+public class RepositorioPessoaJPA extends RepositorioGenericoJPA<Pessoa, Long> implements RepositorioPessoa {
 	
-	public RepositorioPessoaHibernate(Session session) {
-		super(session);
+	public RepositorioPessoaJPA(EntityManager entityManager) {
+		super(entityManager);
 	}
 
 	@Override
