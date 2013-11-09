@@ -28,7 +28,7 @@ Instalação
 
 Realize do download do archetype, clicando em `Download ZIP` e descompacte o arquivo no diretório de sua preferência.
 
-Dentro da pasta criada, execute `mvn compile install` para instalar o archetype no repositório maven local
+Dentro da pasta criada, execute `mvn install` para instalar o archetype no repositório maven local
 
 Crie um projeto
 ---------------
